@@ -1,6 +1,6 @@
 ### Flask version
 
-I've also created a new git branch that uses Flask, based on the [Docker Get Started tutorial](https://docs.docker.com/get-started/part2/).
+I've also created a new git branch containing a Docker container that uses Flask, based on the [Docker Get Started tutorial](https://docs.docker.com/get-started/part2/).
 The run command for this docker image: 
 
 ``` 
