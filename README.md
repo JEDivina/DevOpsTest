@@ -1,6 +1,4 @@
-# DevOpsTest
-ICX Media Dev Ops Test
-# Dev Ops test
+# ICX Media Dev Ops Test
 
 + Create a new repository in your organization in Github.
 + Clone that repository to your local file system.
@@ -14,14 +12,15 @@ ADD README.org .
 ```
 
 + Try to build the docker image and provide the error message.
+
 ```
 ADD failed: stat /var/lib/docker/tmp/docker-builder546527124/README.org: no such file or directory
 ```
 
-- Fix the error in the Dockerfile by submitting a pull request into your repo, and merging it
++ Fix the error in the Dockerfile by submitting a pull request into your repo, and merging it
 into master.
 
-- Re-build the docker image and show the output.
++ Re-build the docker image and show the output.
 
 - Run the docker image to output “Hello World” and show me the command that you ran
 and the subsequent output.
