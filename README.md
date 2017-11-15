@@ -22,12 +22,30 @@ into master.
 
 + Re-build the docker image and show the output.
 
-- Run the docker image to output “Hello World” and show me the command that you ran
+```
+Successfully built c8ff2c0549b2
+Successfully tagged devopstest:latest
+```
+
+```
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+devopstest          latest              c8ff2c0549b2        57 seconds ago      3.97MB
+alpine              latest              053cde6e8953        11 days ago         3.97MB
+```
+
++ Run the docker image to output “Hello World” and show me the command that you ran
 and the subsequent output.
+
+```
+$ docker run devopstest:latest "echo" "Hello World"
+Hello World
+```
 
 - Inside of your new repository add the ability to generate a new template when creating a
 new issue in your repository. Again, submit a pull request to your master branch and
 merge that into master.
+
+
 
 - Finally, add the following github user stevenmccord​ to your new repository for read only access.
 
