@@ -4,19 +4,17 @@ FROM alpine:latest
 # Set the working directory to /home/test/
 WORKDIR /home/test/
 
-# Install Apache
+# Copy current directory contents into the container at /home/test/
+ADD . /home/test/
 
-RUN apk update
+# Run updates on Alpine
+RUN apk add --update python py-pip
 
-RUN apk add apache2 openrc nano --no-cache
-
-# Copy README.md into the container at /home/test/
-ADD README.md .
-
-# commands to run: Start Apache server, print "Hello World" to a HTML page
-
-RUN echo "<h1>Hello World</h1>" > index.html
+# Install Flask
+RUN pip install Flask
 
 # Make port 80 available to the world outside this container
-# EXPOSE 80
+EXPOSE 80
 
+# Run helloworld.py when the container launches
+CMD ["python", "helloworld.py"]
