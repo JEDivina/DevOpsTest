@@ -41,21 +41,12 @@ $ docker run devopstest:latest "echo" "Hello World"
 Hello World
 ```
 
-### Flask version
-I've also created a new git branch that uses Flask, based on the [Docker Get Started tutorial](https://docs.docker.com/get-started/part2/).
-The run command for this docker image: ``` $ docker run -d -it -p 4000:80 devopsflaskserver ```
+The DockerfileWithFlask branch contains a Dockerfile that configures Flask and outputs Hello World on localhost.
 
-In a browser, entering "localhost:4000" shows an HTML header with "Hello World".
-In the command line, the command: ```curl http://localhost:4000``` shows this:
-
-```
-<h3>Hello World</h3>
-```
-
-- Inside of your new repository add the ability to generate a new template when creating a
++ Inside of your new repository add the ability to generate a new template when creating a
 new issue in your repository. Again, submit a pull request to your master branch and
 merge that into master.
 
 
-- Finally, add the following github user stevenmccord​ to your new repository for read only access.
++ Finally, add the following github user stevenmccord​ to your new repository for read only access.
 
